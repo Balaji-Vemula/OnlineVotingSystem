@@ -1,3 +1,5 @@
+create database mini;
+
 use mini;
 
 CREATE TABLE admin(
