@@ -10,7 +10,7 @@ CREATE TABLE admin(
     pwd VARCHAR(255) not null,
     PRIMARY KEY(user_id)
 )
-insert into mini.admin (first_name,last_name,email,pwd) values('admin','admin','admin@example.com','1234'),('sathyadeva','vemula','sathya@example.com','1234'),('Ram','kiran','ram@example.com','1234');
+insert into admin (first_name,last_name,email,pwd) values('admin','admin','admin@example.com','1234'),('sathyadeva','vemula','sathya@example.com','1234'),('Ram','kiran','ram@example.com','1234');
 
 CREATE TABLE candidates(
 	c_id INTEGER not null auto_increment,
@@ -20,3 +20,5 @@ CREATE TABLE candidates(
     c_votes integer default 0,
     PRIMARY KEY(c_id)
 )
+
+insert into mini.candidates (c_first_name,c_last_name,c_age,party_name) Values('Sravan','Kumar',25,'Communist'),('Teja','Varma',30,'Congress'),('Rahul','Kiran',32,'Republic'),('Vishwa','Vapadina',27,'Democratic');
