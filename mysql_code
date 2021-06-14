@@ -12,4 +12,11 @@ CREATE TABLE admin(
 )
 insert into mini.admin (first_name,last_name,email,pwd) values('admin','admin','admin@example.com','1234'),('sathyadeva','vemula','sathya@example.com','1234'),('Ram','kiran','ram@example.com','1234');
 
-
+CREATE TABLE candidates(
+	c_id INTEGER not null auto_increment,
+    c_first_name VARCHAR(255) not null,
+    c_last_name VARCHAR(255) not null,
+    c_age integer not null,
+    c_votes integer default 0,
+    PRIMARY KEY(c_id)
+)
