@@ -36,3 +36,15 @@ create table voters(
     PRIMARY KEY(voter_id)
 )
 
+use mini;
+
+insert into voters (v_first_name,v_last_name, v_email, v_age,v_pwd) values ('Sineeth','Kumar','sineeth@mrcet.com',25,'sineeth')
+,('Anil','Kumar','anil@mrcet.com',24,'anil')
+,('Adithya','Ammula','adithya@mrcet.com',18,'adithya')
+,('Laxman','Kumar','laxman@mrcet.com',14,'laxman')
+,('Faraz','Ahmed','faraz@mrcet.com',29,'faraz')
+,('Bhargav','Mangalarapu','bhargav@mrcet.com',35,'bhargav')
+,('Vasavi','Boppa','vasavi@mrcet.com',49,'vasavi')
+,('Bhavya','Sri','bhavya@mrcet.com',50,'bhavya')
+,('Joshnika','Rikkamalle','joshnika@mrcet.com',45,'joshnika')
+,('Sai','Kumar','sai@mrcet.com',12,'saikumar');
