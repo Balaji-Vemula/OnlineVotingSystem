@@ -48,3 +48,9 @@ insert into voters (v_first_name,v_last_name, v_email, v_age,v_pwd) values ('Sin
 ,('Bhavya','Sri','bhavya@mrcet.com',50,'bhavya')
 ,('Joshnika','Rikkamalle','joshnika@mrcet.com',45,'joshnika')
 ,('Sai','Kumar','sai@mrcet.com',12,'saikumar');
+
+
+reset voting:
+update mini.candidates set c_votes=0 where c_votes!=0;
+update mini.voters set v_cast=true where v_cast=false;
+
