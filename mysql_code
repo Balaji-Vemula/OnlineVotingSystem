@@ -9,7 +9,7 @@ CREATE TABLE admin(
     email VARCHAR(255) not null,
     pwd VARCHAR(255) not null,
     PRIMARY KEY(user_id)
-)
+);
 insert into admin (first_name,last_name,email,pwd) values('admin','admin','admin@example.com','1234'),('sathyadeva','vemula','sathya@example.com','1234'),('Ram','kiran','ram@example.com','1234');
 
 CREATE TABLE candidates(
@@ -20,7 +20,7 @@ CREATE TABLE candidates(
     party_name VARCHAR(255) not null,
     c_votes integer default 0,
     PRIMARY KEY(c_id)
-)
+);
 
 insert into mini.candidates (c_first_name,c_last_name,c_age,party_name) Values('Sravan','Kumar',25,'Communist'),('Teja','Varma',30,'Congress'),('Rahul','Kiran',32,'Republic'),('Vishwa','Vapadina',27,'Democratic');
 
@@ -35,7 +35,7 @@ create table voters(
     v_pwd VARCHAR(255) not null,
     v_cast bool default true,
     PRIMARY KEY(voter_id)
-)
+);
 
 use mini;
 
